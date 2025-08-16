@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothify – Clothing Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-bar">
+        <h1 class="logo">Clothify</h1>
+        <nav class="nav">
+          <a href="#categories">Categories</a>
+          <a href="#products">Products</a>
+          <a href="#newsletter">Newsletter</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Fresh Styles for Every Season</h2>
+          <p>Discover trendy clothing for Men, Women, and Kids.</p>
+          <a href="#products" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-img">
+          <img src="/model.jpg" alt="Fashion model" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+      <div class="container">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="categories">
+          <div class="cat">Men</div>
+          <div class="cat">Women</div>
+          <div class="cat">Kids</div>
+          <div class="cat">Accessories</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Popular Products</h2>
+        <div class="grid products">
+          <div class="card">
+            <img src="/tshirts.jpg" alt="T-shirt" />
+            <div class="card-body">
+              <h3>T-shirt</h3>
+              <p>$25</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/jeans.webp" alt="Jeans" />
+            <div class="card-body">
+              <h3>Jeans</h3>
+              <p>$49</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/jacktes.webp" alt="Jacket" />
+            <div class="card-body">
+              <h3>Jacket</h3>
+              <p>$89</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/sneak.jpg" alt="Shoes" />
+            <div class="card-body">
+              <h3>Sneakers</h3>
+              <p>$69</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="section newsletter">
+      <div class="container">
+        <h2 class="section-title">Get 10% Off Your First Order</h2>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Clothify. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
